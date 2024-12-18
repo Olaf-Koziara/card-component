@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0c1b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", serif;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .banner {
+    width: 1080px;
+    aspect-ratio: 110/44;
+    flex-direction: row;
+  }
+}
+.banner__content {
+  padding: 20px 40px 30px 40px;
+  color: hsla(0, 0%, 100%, 0.75);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .banner__content {
+    text-align: start;
+    padding: 40px 120px 30px 60px;
+    flex: 0 0 50%;
+  }
+}
+.banner__content h1 {
+  color: white;
+  font-size: 2.2em;
+}
+.banner__content p {
+  line-height: 1.75;
+}
+.banner__stats {
+  color: hsla(0, 0%, 100%, 0.6);
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (min-width: 1024px) {
+  .banner__stats {
+    flex-direction: row;
+  }
+}
+.banner__stats h2 {
+  color: #fff;
+  margin-bottom: 4px;
+}
+.banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner__image-wrapper {
+  position: relative;
+}
+.banner__image-wrapper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(280, 100%, 32.68%);
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+}
+
+.text-pink {
+  color: hsl(277, 64%, 61%);
+}
+
+/*# sourceMappingURL=index.css.map */
